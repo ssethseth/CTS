@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.innerHTML === "Monday") {
+        x.innerHTML = "Tuesday";
+        }
+        else if(x.innerHTML === "Tuesday") {
+        x.innerHTML = "Wednesday";
+        }
+        else if(x.innerHTML === "Wednesday") {
+        x.innerHTML = "Thursday";
+        }
+        else if(x.innerHTML === "Thursday") {
+        x.innerHTML = "Friday";
+        }
+        else if(x.innerHTML === "Friday") {
+        x.innerHTML = "Saturday";
+        }
+        else if(x.innerHTML === "Saturday") {
+        x.innerHTML = "Sunday";
+        }
+        else
+            x.innerHTML="Monday";
+}
+    </script>
+</head>
+<body>
+<center>
+        <button onclick="myFunction()">Change Day</button>
+
+        <div id="myDIV">Monday</div>
+</center>
+</body>
+</html>
